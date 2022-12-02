@@ -1,18 +1,16 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <div class="bg-custom-black-secondary w-full h-screen px-20 py-6">
+    <HeaderDesktop />
   </div>
+  <div class="bg-custom-black-primary w-full h-screen px-20 py-6"></div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import HeaderDesktop from "@/components/HeaderDesktop.vue";
 
 export default defineComponent({
   name: "HomeView",
-  components: {
-    HelloWorld,
-  },
+  components: { HeaderDesktop },
 });
 </script>
